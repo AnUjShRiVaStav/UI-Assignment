@@ -1,0 +1,13 @@
+.para {
+  max-width: 400px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: keep-all;
+ 
+  }
+  
+  a {
+    text-decoration: none;
+    color: #008CBA;
+  }
+

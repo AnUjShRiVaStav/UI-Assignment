@@ -1,4 +1,9 @@
 import Card from 'react-bootstrap/Card'
+import './card.css';
+
+import { ImPencil } from 'react-icons/im'
+import { AiFillSetting } from 'react-icons/ai'
+import { GiNetworkBars } from 'react-icons/gi'
 
 export default function CARD() {
     return (
@@ -6,7 +11,7 @@ export default function CARD() {
 
             <Card.Body>
                 <Card>
-                    <div style={{ height: '200px', backgroundColor: 'rgb(220,220,220)', width: '100%', display: 'flex', gap: '30px', justifyContent: 'center' }}>
+                    <div style={{ height: '200px', backgroundColor: 'rgb(220,220,220)', width: '100%', display: 'flex', gap: '30px', justifyContent: 'center', maxHeight: '300px' }}>
 
                         <div style={{ backgroundColor: '#3C99DC' }}>
                             <Card.Body>
@@ -18,10 +23,12 @@ export default function CARD() {
 
                             <p style={{ justifyContent: 'center', textAlign: 'center', marginTop: '10px' }}>Lindo, CEO</p>
                         </div>
-                        <p style={{ maxWidth: '200px', maxHeight: '100px' }}>Karma is a free Bootstrap template for e-commerce websites. It is a trendy, stylish, and dynamic web canvas,
-                            perfectly suitable for online shopping, e-commerce sites, online clothing shops, and other fashion
-                            and apparel related organizations. Built with HTML5 & CSS3, this web skin is 100% responsive, highly-optimized,
-                            and well-capable for all the recent browsers.</p>
+                        <div className='para'>
+                            <p>Karma is a <a target="_blank" href="tryit.asp?filename=trycss_text">free HTML 5 template</a>  for e-commerce websites.It is a trendy, stylish, and dynamic web canvas,
+                                perfectly suitable for online shopping, e-commerce sites, online clothing shops, and other fashion
+                                and apparel related organizations.Built with HTML5 & CSS3, this web skin is 100% responsive, highly-optimized,
+                                and well-capable for all the recent browsers.</p>
+                        </div>
                     </div>
 
                 </Card>
@@ -61,14 +68,23 @@ export default function CARD() {
 
             <Card.Body>
                 <Card>
-                    <div style={{ height: '200px', backgroundColor: 'rgb(220,220,220)', width: '100%', display: 'flex', gap: '30px', justifyContent: 'center' }}>
+                    <div style={{ height: '200px', width: '100%', display: 'flex', gap: '30px', justifyContent: 'center', backgroundColor: 'rgb(220,220,220)' }}>
 
-                        <div style={{ backgroundColor: 'orange' }}>
+                        <div className='task' style={{ backgroundColor: 'orange' }}>
                             <Card.Body>
                                 <h1 style={{ color: 'white', textAlign: 'center', marginTop: '50px' }}>SERVICES</h1>
                             </Card.Body>
                         </div>
-                        <div style={{ backgroundColor: '#3C99DC' }}>
+                        <div style={{ height: '150px', cursor: 'pointer' }}>
+                            <div>
+                                <ImPencil size='50px' color='white' style={{ backgroundColor: 'orange', paddingBottom: '15px', paddingTop: '10px' }} />
+                            </div>
+                            <AiFillSetting size='50px' color='white' style={{ backgroundColor: 'black', paddingBottom: '15px', paddingTop: '10px', marginTop: '20px' }} />
+                            <div>
+                                <GiNetworkBars size='50px' color='white' style={{ backgroundColor: 'black', paddingBottom: '15px', paddingTop: '9px', marginTop: '20px' }} />
+                            </div>
+                        </div>
+                        <div style={{ backgroundColor: 'orange' }}>
                             <Card.Body>
                                 <h1 style={{ color: 'white', textAlign: 'center', marginTop: '50px' }}>SERVICES</h1>
                             </Card.Body>
