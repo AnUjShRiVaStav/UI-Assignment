@@ -68,14 +68,14 @@ export default function CARD() {
 
             <Card.Body>
                 <Card>
-                    <div style={{ height: '200px', width: '100%', display: 'flex', gap: '30px', justifyContent: 'center', backgroundColor: 'rgb(220,220,220)' }}>
+                    <div style={{ maxHeight: '200px', width: '100%', display: 'flex', gap: '50px', justifyContent: 'center', backgroundColor: 'rgb(220,220,220)' }}>
 
                         <div className='task' style={{ backgroundColor: 'orange' }}>
                             <Card.Body>
                                 <h1 style={{ color: 'white', textAlign: 'center', marginTop: '50px' }}>SERVICES</h1>
                             </Card.Body>
                         </div>
-                        <div style={{ height: '150px', cursor: 'pointer' }}>
+                        <div style={{ cursor: 'pointer' }}>
                             <div>
                                 <ImPencil size='50px' color='white' style={{ backgroundColor: 'orange', paddingBottom: '15px', paddingTop: '10px' }} />
                             </div>
@@ -86,7 +86,7 @@ export default function CARD() {
                         </div>
                         <div style={{ backgroundColor: 'orange' }}>
                             <Card.Body>
-                                <h1 style={{ color: 'white', textAlign: 'center', marginTop: '50px' }}>SERVICES</h1>
+                                <p style={{ color: 'white', textAlign: 'center', maxWidth: '200px', fontSize: '12px' }}>Web design encompasses many different skills and disciplines in the production and maintenance of websites. The different areas of web design include web graphic design; user interface design; authoring, including standardised code and proprietary software; user experience design; and search engine optimization.</p>
                             </Card.Body>
                         </div>
                     </div>
